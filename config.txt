@@ -1,0 +1,7 @@
+option batch on
+option confirm off
+open ftp://"%1%":"%2%"@"%3%" -passive=on
+cd /
+keepuptodate "%4%" -filemask="%5%"
+close
+exit
